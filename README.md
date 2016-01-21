@@ -1,4 +1,4 @@
-GLEX
+EXGL
 ---
 
 An experiment to call Elixir from OpenGL.
