@@ -1,0 +1,22 @@
+GLEX
+---
+
+An experiment to call Elixir from OpenGL.
+
+Usage
+---
+
+1. Own a Mac (I haven't tried this on Windows or Linux yet, but I'm 100% sure the Makefile won't work on those platforms)
+2. Don't be afraid of the 18 warnings Clang generates
+3. Run `make`
+4. Run Iex
+5. In Iex, run `c "gl.ex"`
+6. If that works, run `GL.start()`
+7. Pray
+
+Hilarious that this works. Uhhh don't leave it running too long, I left it on for awhile and my computer started to freak out.
+
+Not Usage
+---
+
+Lmao so since the OpenGL code never returns, this literally halts the entire Erlang VM, perfect. I'm guessing there are two ways to deal with this: create a pthread from C and run the OpenGL code in that so the NIF function can actually return, or better, spawn a process in Elixir and call this NIF func??? I'm not sure yet, will update in a future commit if I ever make one.
