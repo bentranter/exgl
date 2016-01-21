@@ -19,13 +19,13 @@ void Sprint(int x, int y, char *s) {
 	l = strlen(s);
 	glRasterPos2i(x, y);
 	for (i = 0; i < l; i++) {
-		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_24, s[i]);
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, s[i]);
 	}
 }
 
 /*
  * Init initializes our OpenGL world. It makes the screen black, sets the
- * object to be rendered smotth, and checks the depth when rendering.
+ * object to be rendered smooth, and checks the depth when rendering.
  */
 static void init() {
 	int i;
