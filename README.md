@@ -3,7 +3,7 @@ EXGL
 
 ![image](https://cloud.githubusercontent.com/assets/5421627/12470929/abab85f6-bfc6-11e5-8c30-fb1f0f35e8d1.png)
 
-An experiment to call Elixir from OpenGL.
+An experiment to call OpenGl from Elixir.
 
 Usage
 ---
