@@ -16,9 +16,7 @@ Usage
 6. If that works, run `GL.start()`
 7. Pray
 
-Hilarious that this works. Uhhh don't leave it running too long, I left it on for awhile and my computer started to freak out.
-
 Not Usage
 ---
 
-Lmao so since the OpenGL code never returns, this literally halts the entire Erlang VM, perfect. I'm guessing there are two ways to deal with this: create a pthread from C and run the OpenGL code in that so the NIF function can actually return, or better, spawn a process in Elixir and call this NIF func??? I'm not sure yet, will update in a future commit if I ever make one.
+Since the OpenGL code never returns, this literally halts the entire Erlang VM. I'm guessing there are two ways to deal with this: create a pthread from C and run the OpenGL code in that so the NIF function can actually return, or better, spawn a process in Elixir and call this NIF func??? I'm not sure yet, will update in a future commit if I ever make one _(note: there's no way I'm going to work on this again)_.
